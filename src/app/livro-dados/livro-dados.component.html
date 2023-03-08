@@ -1,0 +1,47 @@
+<main class="container" style="margin-top: 10px;">
+    <div>
+        <h2>Cadastrar Livro</h2>
+        <hr class="border border-dark border-1 opacity-50" />
+    </div>
+    <div>
+
+        <form [formGroup]="formUsu" (ngSubmit)="incluir()" ngNativeValidate>
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título</label>
+                <input id="titulo" type="text" class="form-control" formControlName="titulo" [(ngModel)]="livro.titulo" required>
+                <div class="text-danger" style="font-size: 12px;" *ngIf="formUsu.get('titulo')?.errors">
+                    *{{getError("titulo")}}
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="resumo" class="form-label">Resumo</label>
+                <input id="resumo" type="text" class="form-control" formControlName="resumo" [(ngModel)]="livro.resumo" required>
+                <div class="text-danger" style="font-size: 12px;" *ngIf="formUsu.get('resumo')?.errors">
+                    *{{getError("resumo")}}
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="editora" class="form-label">Editora</label>
+                <select id="codEditora" class="form-select" aria-label="Default select example" formControlName="codEditora"
+                    [(ngModel)]="livro.codEditora" required>
+                    <option *ngFor="let editora of editoras" [ngValue]="editora.codEditora">{{editora.nome}}</option>
+                </select>
+                <div class="text-danger" style="font-size: 12px;" *ngIf="formUsu.get('codEditora')?.errors">
+                    *{{getError("codEditora")}}
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="autores" class="form-label">Autores</label>
+                <input id="autores" type="text" class="form-control" formControlName="autores" placeholder="Ex.: Carlos Henrique, Manuel Castro" [(ngModel)]="autoresForm" required>
+                <div class="text-danger" style="font-size: 12px;" *ngIf="formUsu.get('autores')?.errors">
+                    *{{getError("autores")}}
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+    </div>
+</main>
