@@ -10,5 +10,5 @@ Um catálogo de livro usando Angular e Bootstrap
 
 Após executar o comando abaixo a aplicação poderá ser visualizada no endereço http://localhost:4200/
 
-## `npm serve`
+## `ng serve`
 
