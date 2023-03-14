@@ -4,6 +4,9 @@ Um catálogo de livro usando Angular e Bootstrap, você pode ver ele funcionando
 
 -  [Opens in new tab](https://external.ink?to=/placeholder.com)
 
+<a href="http://google.com/" target="_blank">Hello, google!</a>
+[link]: http://google.com.
+
 ![alt text](tela.png)
 
 # Passos 
