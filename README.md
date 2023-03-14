@@ -2,7 +2,7 @@
 
 Um catálogo de livro usando Angular e Bootstrap, você pode ver ele funcionando em:
 
-- <a href="https://livros-angular.vercel.app" target="_blank">https://livros-angular.vercel.app</a>
+-  [Opens in new tab](https://external.ink?to=/placeholder.com)
 
 ![alt text](tela.png)
 
