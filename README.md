@@ -1,6 +1,6 @@
 # Instruções para iniciar a aplicação
 
-Um catálogo de livro usando Angular e Bootstrap, você pode ver ele funvionando em:
+Um catálogo de livro usando Angular e Bootstrap, você pode ver ele funcionando em:
 
 - https://livros-angular.vercel.app
 
